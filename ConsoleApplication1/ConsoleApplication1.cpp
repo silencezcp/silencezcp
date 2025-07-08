@@ -2,9 +2,19 @@
 //
 
 #include <iostream>
+#include <string>
+
+struct Person {
+    std::string name;
+    int age;
+};
 
 int main()
 {
+    Person p;
+    p.name = "Alice";
+    p.age = 30;
+    std::cout << "Name: " << p.name << ", Age: " << p.age << std::endl;
     std::cout << "Hello World!\n";
 }
 
