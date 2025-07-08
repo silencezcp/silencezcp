@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "ColorPrinter.h"
 
 struct Person {
     std::string name;
@@ -16,6 +17,12 @@ int main()
     p.age = 30;
     std::cout << "Name: " << p.name << ", Age: " << p.age << std::endl;
     std::cout << "Hello World!\n";
+
+    ColorPrinter::Print("This is red.", ColorPrinter::Color::Red);
+    ColorPrinter::Print("This is green.", ColorPrinter::Color::Green);
+    ColorPrinter::Print("This is blue.", ColorPrinter::Color::Blue);
+    ColorPrinter::Print("This is yellow.", ColorPrinter::Color::Yellow);
+    ColorPrinter::Print("This is default color.");
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
